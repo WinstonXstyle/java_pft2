@@ -17,12 +17,12 @@ public class Point{
             p2.x2 = 6;
             p2.y2 = 5;
 
-            System.out.println("расстояние между точками " + x1 + ":" + y1 + " и " + x2 + ":" + y2 + " = " + distance(p1,p2));
+            System.out.println("расстояние между точками " + x1 + ":" + y1 + " и " + x2 + ":" + y2 + " = " + p1.distance());
         }
 
-        public static double distance(Point p1, Point p2){
+        public double distance(){
 
-            return Math.sqrt((p2.x2 - p1.x1) * (p2.x2 - p1.x1) + (p2.y2 - p1.y1) * (p2.y2 - p1.y1));
+            return  Math.sqrt((this.x2 - this.x1) * (this.x2 - this.x1) + (this.y2 - this.y1) * (this.y2 - this.y1));
 
         }
 
